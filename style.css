@@ -108,10 +108,14 @@ body {
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  display: flex;
   align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
 }
 
 .hero-text h1 {
@@ -178,7 +182,9 @@ body {
 }
 
 .hero-image {
+  flex: 1;
   text-align: center;
+  min-width: 300px;
 }
 
 .hero-image img {
@@ -194,15 +200,25 @@ body {
 }
 
 .collection-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  display: flex;
   align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.collection-image {
+  flex: 1;
+  min-width: 300px;
 }
 
 .collection-image img {
   width: 100%;
   border-radius: 15px;
+}
+
+.collection-text {
+  flex: 1;
+  min-width: 300px;
 }
 
 .collection-text h2 {
@@ -297,10 +313,11 @@ body {
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 3rem;
+  justify-content: center;
 }
 
 .service-card {
@@ -309,6 +326,9 @@ body {
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
 }
 
 .service-icon {
@@ -372,9 +392,10 @@ body {
 }
 
 .cars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .car-card {
@@ -382,11 +403,36 @@ body {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  flex: 1;
+  min-width: 350px;
+  max-width: 380px;
+}
+
+.car-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(108, 92, 231, 0.1),
+    rgba(162, 155, 254, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.car-card:hover::before {
+  opacity: 1;
 }
 
 .car-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(108, 92, 231, 0.2);
 }
 
 .car-card img {
@@ -418,6 +464,7 @@ body {
   margin-bottom: 1rem;
   color: #666;
   font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .btn-book {
@@ -531,40 +578,6 @@ body {
   color: #6c5ce7;
 }
 
-.car-card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.car-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(108, 92, 231, 0.1),
-    rgba(162, 155, 254, 0.1)
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.car-card:hover::before {
-  opacity: 1;
-}
-
-.car-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(108, 92, 231, 0.2);
-}
-
 .newsletter {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 4rem 0;
@@ -590,6 +603,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .newsletter-form input {
@@ -598,6 +612,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
+  min-width: 250px;
 }
 
 .newsletter-form button {
@@ -655,10 +670,11 @@ body {
 }
 
 .testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 3rem;
+  justify-content: center;
 }
 
 .testimonial-card {
@@ -667,10 +683,13 @@ body {
   border-radius: 15px;
   text-align: center;
   position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
 }
 
 .testimonial-card::before {
-  content: '"';
+  content: '“';
   font-size: 4rem;
   color: #6c5ce7;
   position: absolute;
@@ -956,20 +975,41 @@ body {
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
   }
 
   .collection-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .cars-grid {
-    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .car-card {
+    min-width: 300px;
+    max-width: 400px;
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 400px;
+    width: 100%;
   }
 
   .footer-content {
@@ -987,6 +1027,16 @@ body {
 
   .form-row {
     flex-direction: column;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    min-width: 280px;
+    max-width: 400px;
   }
 
   .map-overlay {
