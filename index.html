@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renty - Car Rental Service</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">RENTY</div>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-right">
+            <select class="language-selector">
+              <option>EN</option>
+              <option>FR</option>
+              <option>ES</option>
+            </select>
+
+            <div class="search-box">
+              <input
+                type="text"
+                placeholder="Search cars..."
+                id="searchInput"
+              />
+              <i class="fas fa-search"></i>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Search and find your best car rental with easy way</h1>
+            <p>
+              Enjoy your memorable and dream trips with step-by-step for car
+              destinations, data visualizations, and automated itinerary
+              creation.
+            </p>
+
+            <div class="btn-group">
+              <a href="#booking" class="btn-primary">
+                <i class="fas fa-phone"></i>
+                Booking now
+              </a>
+              <a href="#cars" class="btn-secondary">See all cars</a>
+            </div>
+          </div>
+
+          <div class="hero-image fade-in fade-in-delay-1">
+            <img src="assets/hero-image.jpg" alt="Luxury Car" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Collection -->
+    <section class="special-collection">
+      <div class="container">
+        <div class="collection-content">
+          <div class="collection-image">
+            <img src="assets/about-image.jpg" alt="Car Collection" />
+          </div>
+
+          <div class="collection-text">
+            <p class="tagline">About Us</p>
+            <h2>More than 150+ special collection cars</h2>
+            <p>
+              Get the car of your dreams with the assurance of your choice.
+              There are various attractive offers from Mobilan throughout 2023,
+              perfect for various budget touring options.
+            </p>
+
+            <a href="#collection" class="btn-primary">
+              See all cars
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <p class="tagline">Our Service</p>
+        <h2>We have best service for the rent cars</h2>
+        <p>
+          Enjoy your memories with clean, comfortable cars and stay safe. Renta
+          is your partner to accompany you throughout Indonesia.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Quality Choice</h3>
+            <p>
+              We guarantee wide selection of Cars that meets Renty partners with
+              fast and clean car
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Exclusive Service</h3>
+            <p>
+              Renty partners are ready to help you find your dream car for your
+              holiday in the city
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Fast and Safe</h3>
+            <p>
+              Transaction process is completed within 24 hours Identified by
+              Bumo automated
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-flex">
+          <div class="features-content">
+            <p class="tagline">Why Choose Us</p>
+            <h2>Experience Premium Car Rental Service</h2>
+            <p>
+              We provide exceptional car rental services with modern vehicles,
+              competitive prices, and outstanding customer support.
+            </p>
+
+            <div class="features-list">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Full Insurance Coverage</h4>
+                  <p>
+                    Complete protection for your peace of mind during every
+                    journey
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>24/7 Support</h4>
+                  <p>
+                    Round-the-clock customer service and roadside assistance
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Easy Booking</h4>
+                  <p>
+                    Simple online booking process through our website or mobile
+                    app
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-car"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Premium Fleet</h4>
+                  <p>
+                    Well-maintained, modern vehicles for every occasion and
+                    budget
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-image">
+            <img src="assets/choose-image.jpg" alt="Car Features" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Car Collection -->
+    <section class="car-collection">
+      <div class="container">
+        <div class="section-header">
+          <p class="tagline">Collection</p>
+          <h2>Our Collection Cars</h2>
+        </div>
+
+        <div class="car-tabs">
+          <button class="car-tab active">Popular</button>
+          <button class="car-tab">Luxe Car</button>
+          <button class="car-tab">Sport Car</button>
+          <button class="car-tab">Electric Car</button>
+        </div>
+
+        <div class="cars-grid">
+          <div class="car-card">
+            <img src="assets/car-1.jpg" alt="Lamborghini Red 2021" />
+            <div class="car-info">
+              <div class="car-price">$80,59</div>
+              <div class="car-name">Lamborghini Red 2021</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 4 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 2 Door</span>
+              </div>
+              <button class="btn-book">
+                <i class="fas fa-phone"></i>
+                Booking now
+              </button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-2.jpg" alt="Nissan Turbo 2022" />
+            <div class="car-info">
+              <div class="car-price">$52,46</div>
+              <div class="car-name">Nissan Turbo 2022</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 4 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 4 Door</span>
+              </div>
+              <button class="btn-book">Booking now</button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-3.jpg" alt="Mazda Sport Silver 2019" />
+            <div class="car-info">
+              <div class="car-price">$60,25</div>
+              <div class="car-name">Mazda Sport Silver 2019</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 2 People</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-car-door"></i> 2 Door</span>
+              </div>
+              <button class="btn-book">Booking now</button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-3.jpg" alt="Toyota Sport White 2023" />
+            <div class="car-info">
+              <div class="car-price">$89,90</div>
+              <div class="car-name">Toyota Sport White 2023</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 2 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 2 Door</span>
+              </div>
+              <button class="btn-book">Booking now</button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/hero-image.jpg" alt="Mazda Blue Mini 2021" />
+            <div class="car-info">
+              <div class="car-price">$55,64</div>
+              <div class="car-name">Mazda Blue Mini 2021</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 4 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 4 Door</span>
+              </div>
+              <button class="btn-book">Booking now</button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-5.jpg" alt="Nissan Sport Yellow 2022" />
+            <div class="car-info">
+              <div class="car-price">$52,30</div>
+              <div class="car-name">Nissan Sport Yellow 2022</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 2 People</span>
+                <span><i class="fas fa-cog"></i> Manual</span>
+                <span><i class="fas fa-car-door"></i> 2 Door</span>
+              </div>
+              <button class="btn-book">Booking now</button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-6.jpg" alt="BMW X5 Black 2023" />
+            <div class="car-info">
+              <div class="car-price">$75,20</div>
+              <div class="car-name">BMW X5 Black 2023</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 5 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 4 Door</span>
+              </div>
+              <button class="btn-book">
+                <i class="fas fa-phone"></i>
+                Booking now
+              </button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-7.jpg" alt="Audi A4 White 2024" />
+            <div class="car-info">
+              <div class="car-price">$65,80</div>
+              <div class="car-name">Audi A4 White 2024</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 5 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 4 Door</span>
+              </div>
+              <button class="btn-book">Booking now</button>
+            </div>
+          </div>
+
+          <div class="car-card">
+            <img src="assets/car-8.jpg" alt="Mercedes C-Class Silver 2023" />
+            <div class="car-info">
+              <div class="car-price">$72,95</div>
+              <div class="car-name">Mercedes C-Class Silver 2023</div>
+              <div class="car-features">
+                <span><i class="fas fa-users"></i> 5 People</span>
+                <span><i class="fas fa-cog"></i> Auto</span>
+                <span><i class="fas fa-car-door"></i> 4 Door</span>
+              </div>
+              <button class="btn-book">
+                <i class="fas fa-star"></i>
+                Booking now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-cars">
+          <a href="#all-cars" class="btn-primary">View all cars</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="tagline">Testimonials</p>
+          <h2>What Our Customers Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in">
+            <p class="testimonial-text">
+              Amazing service! The car was clean, comfortable, and exactly what
+              I needed for my business trip. Highly recommend Renty!
+            </p>
+            <div class="testimonial-author">Sarah Johnson</div>
+            <div class="testimonial-role">Business Executive</div>
+          </div>
+
+          <div class="testimonial-card fade-in fade-in-delay-1">
+            <p class="testimonial-text">
+              Best car rental experience I've ever had. The booking process was
+              seamless and the customer service was outstanding.
+            </p>
+            <div class="testimonial-author">Michael Chen</div>
+            <div class="testimonial-role">Travel Blogger</div>
+          </div>
+
+          <div class="testimonial-card fade-in fade-in-delay-2">
+            <p class="testimonial-text">
+              Perfect for our family vacation! The SUV was spacious, reliable,
+              and made our trip memorable. Will definitely book again!
+            </p>
+            <div class="testimonial-author">Emily Rodriguez</div>
+            <div class="testimonial-role">Family Traveler</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <h3>Stay Updated with Our Latest Offers</h3>
+        <p>
+          Subscribe to our newsletter and be the first to know about exclusive
+          deals, new car arrivals, and special promotions.
+        </p>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="tagline">Get In Touch</p>
+          <h2>Contact Us</h2>
+          <p>
+            Have questions? We're here to help you find the perfect car for your
+            journey
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Our Location</h4>
+                <p>
+                  123 Car Rental Street<br />Downtown District, Accra<br />Greater
+                  Accra, Ghana
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone Number</h4>
+                <p>+233 24 123 4567<br />+233 20 987 6543</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <p>info@renty.com<br />support@renty.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="text" id="Name" name="Name" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us how we can help you..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7168240519315!2d-0.18695278519458384!3d5.603716995457446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra%2C%20Ghana!5e0!3m2!1sen!2s!4v1635959234567!5m2!1sen!2s"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Let's drive with Renty today!</h2>
+        <p>
+          Get the app to discover the world of Renty from the comfort of your
+          smartphone.
+        </p>
+
+        <div class="app-buttons">
+          <a href="#" class="app-btn">
+            <i class="fab fa-apple"></i>
+            App Store
+          </a>
+          <a href="#" class="app-btn">
+            <i class="fab fa-google-play"></i>
+            Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">RENTY</div>
+
+          <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#category">Category</a>
+            <a href="#resources">Resources</a>
+          </nav>
+
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
