@@ -53,7 +53,7 @@ body {
 }
 
 .nav-menu a:hover {
-  color:  #0021b5;
+  color: #0021b5;
 }
 
 .nav-right {
@@ -136,7 +136,7 @@ body {
 }
 
 .btn-primary {
-  background:#0021b5;
+  background: #0021b5;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -151,7 +151,7 @@ body {
 }
 
 .btn-primary:hover {
-  background:#0021b5;
+  background: #0021b5;
   transform: translateY(-2px);
 }
 
@@ -169,12 +169,12 @@ body {
 
 .btn-secondary:hover {
   border-color: #0021b5;
-  color:  #0021b5;
+  color: #0021b5;
 }
 
 .tagline {
   color: #0021b5;
-  font-weight: 600; 
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -330,7 +330,7 @@ body {
 .service-icon {
   width: 80px;
   height: 80px;
-  background:#0021b5;
+  background: #0021b5;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -382,9 +382,9 @@ body {
 }
 
 .car-tab.active {
-  background:#0021b5;
+  background: #0021b5;
   color: white;
-  border-color:#0021b5;
+  border-color: #0021b5;
 }
 
 .cars-grid {
@@ -444,7 +444,7 @@ body {
 .car-price {
   font-size: 1.5rem;
   font-weight: bold;
-  color:#0021b5;
+  color: #0021b5;
   margin-bottom: 0.5rem;
 }
 
@@ -465,7 +465,7 @@ body {
 
 .btn-book {
   width: 100%;
-  background:#0021b5;
+  background: #0021b5;
   color: white;
   padding: 0.8rem;
   border: none;
@@ -475,7 +475,7 @@ body {
 }
 
 .btn-book:hover {
-  background:#0021b5;
+  background: #0021b5;
 }
 
 .view-all-cars {
@@ -484,7 +484,7 @@ body {
 }
 
 .cta {
-  background: linear-gradient(135deg,  #0021b5,  #0a37ff);
+  background: linear-gradient(135deg, #0021b5, #0a37ff);
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -571,7 +571,7 @@ body {
 }
 
 .social-links a:hover {
-  color:#0021b5;
+  color: #0021b5;
 }
 
 .newsletter {
@@ -612,7 +612,7 @@ body {
 }
 
 .newsletter-form button {
-  background:#0021b5;
+  background: #0021b5;
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -623,7 +623,7 @@ body {
 }
 
 .newsletter-form button:hover {
-  background:#0021b5;
+  background: #0021b5;
 }
 
 .search-box {
@@ -685,9 +685,9 @@ body {
 }
 
 .testimonial-card::before {
-  content: '“';
+  content: "“";
   font-size: 4rem;
-  color:#0021b5;
+  color: #0021b5;
   position: absolute;
   top: -1rem;
   left: 1rem;
@@ -745,7 +745,7 @@ body {
 .contact-icon {
   width: 50px;
   height: 50px;
-  background:#0021b5;
+  background: #0021b5;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -812,7 +812,7 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color:#0021b5;
+  border-color: #0021b5;
 }
 
 .form-group textarea {
@@ -822,7 +822,7 @@ body {
 
 .btn-submit {
   width: 100%;
-  background:#0021b5;
+  background: #0021b5;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -837,7 +837,7 @@ body {
 }
 
 .btn-submit:hover {
-  background:#0021b5;
+  background: #0021b5;
   transform: translateY(-2px);
 }
 
@@ -875,7 +875,7 @@ body {
 }
 
 .btn-directions {
-  background:#0021b5;
+  background: #0021b5;
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
