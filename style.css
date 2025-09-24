@@ -472,7 +472,6 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-
 }
 
 .btn-book:hover {
@@ -572,7 +571,7 @@ body {
 }
 
 .social-links a:hover {
-  color: #0021b5;
+  color: #0a37ff;
 }
 
 .newsletter {
@@ -624,7 +623,7 @@ body {
 }
 
 .newsletter-form button:hover {
-  background: #0021b5;
+  background: #0a37ff;
 }
 
 .search-box {
@@ -838,7 +837,7 @@ body {
 }
 
 .btn-submit:hover {
-  background: #0021b5;
+  background: #0a37ff;
   transform: translateY(-2px);
 }
 
@@ -888,7 +887,7 @@ body {
 }
 
 .btn-directions:hover {
-  background: #0021b5;
+  background: #0a37ff;
 }
 
 @media (max-width: 768px) {
@@ -927,15 +926,6 @@ body {
     font-size: 2rem;
   }
 
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .collection-content{
-    flex-direction: column;
-  }
-
   .cars-grid {
     justify-content: center;
   }
@@ -945,17 +935,15 @@ body {
     max-width: 400px;
   }
 
-  .services-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .service-card {
     max-width: 400px;
     width: 100%;
   }
 
-  .testimonials-grid {
+  .hero-content,
+  .testimonials-grid,
+  .services-grid,
+  .footer-content {
     flex-direction: column;
     align-items: center;
   }
@@ -965,20 +953,14 @@ body {
     width: 100%;
   }
 
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .btn-group {
     justify-content: center;
   }
 
-  .contact-content {
-    flex-direction: column;
-  }
-
-  .form-row {
+  .contact-content,
+  .form-row,
+  .collection-content,
+  .features-flex {
     flex-direction: column;
   }
 
@@ -1012,10 +994,7 @@ body {
     font-size: 1.8rem;
   }
 
-  .section-header h2 {
-    font-size: 2rem;
-  }
-
+  .section-header h2,
   .cta h2 {
     font-size: 2rem;
   }
