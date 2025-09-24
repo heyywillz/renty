@@ -932,7 +932,7 @@ body {
     text-align: center;
   }
 
-  .collection-content {
+  .collection-content{
     flex-direction: column;
   }
 
