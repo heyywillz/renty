@@ -472,10 +472,11 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
+
 }
 
 .btn-book:hover {
-  background: #0021b5;
+  background: #0a37ff;
 }
 
 .view-all-cars {
@@ -847,7 +848,6 @@ body {
 
 .map-container {
   position: relative;
-  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
